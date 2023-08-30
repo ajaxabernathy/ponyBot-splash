@@ -26,10 +26,19 @@ body {
     rgb(var(--background-start-rgb));
 }
 
+.landing_body {
+  background-color: #0047ff;
+}
+
+.nav_text {
+  font-size: 40px;
+  @apply tracking-tighter
+  font-extrabold leading-[1.15];
+}
+
 .head_text {
-  font-size: 120px;
-  @apply mt-20 py-10
-  tracking-tighter
+  font-size: 260px;
+  @apply tracking-tighter
   font-extrabold leading-[1.15];
 }
 

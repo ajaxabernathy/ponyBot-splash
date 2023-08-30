@@ -15,6 +15,7 @@ const config: Config = {
       },
       colors: {
         'regal-blue': '#243c5a',
+        'theme-blue': '#0047ff',
       },
       animation: {
         text: 'text 5s ease infinite',

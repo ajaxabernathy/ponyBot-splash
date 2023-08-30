@@ -6,7 +6,7 @@ import Navbar from '@/components/navbar';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'ponyBot',
+  title: 'WatchDog',
 };
 
 export default function RootLayout({
@@ -16,7 +16,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang='en'>
-      <body className={`${inter.className}container mx-auto`}>
+      <body className={`${inter.className}`}>
         <Navbar />
         {children}
       </body>
