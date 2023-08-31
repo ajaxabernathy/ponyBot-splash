@@ -1,5 +1,6 @@
 import FeaturesCardOne from '@/components/features-card-one';
 import FeaturesCardTwo from '@/components/features-card-two';
+import Footer from '@/components/footer';
 
 export default function Home() {
   return (
@@ -7,13 +8,13 @@ export default function Home() {
       <div className='w-full landing_body h-screen flex-center flex-col'>
         <section className=''>
           <h1 className='text-left ml-10'>
-            <div className='head_text animate-text bg-gradient-to-r from-theme-blue via-black to-black bg-clip-text text-transparent font-black'>
+            <div className='head_text animate-text bg-gradient-to-r from-black via-black to-theme-blue bg-clip-text text-transparent font-black'>
               Develop.
             </div>
-            <div className='head_text animate-text bg-gradient-to-l from-theme-blue via-black to-theme-blue bg-clip-text text-transparent'>
+            <div className='head_text animate-text bg-gradient-to-br from-theme-blue via-black to-black bg-clip-text text-transparent'>
               Monitor.
             </div>
-            <div className='head_text animate-text bg-gradient-to-r from-theme-blue via-black to-black bg-clip-text text-transparent'>
+            <div className='head_text animate-text bg-gradient-to-bl from-theme-blue via-black to-theme-blue bg-clip-text text-transparent'>
               Deploy.
             </div>
           </h1>
@@ -35,7 +36,8 @@ export default function Home() {
         </span> */}
       </div>
       <FeaturesCardOne />
-      <FeaturesCardTwo />
+      {/* <FeaturesCardTwo /> */}
+      <Footer />
     </main>
   );
 }
