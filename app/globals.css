@@ -46,6 +46,33 @@ body {
   color: rgb(102, 102, 102);
 }
 
+.feature_p_lg {
+  font-size: 80px;
+  font-weight: 600;
+  line-height: 2.5cm;
+  padding-left: 60px;
+  padding-top: 60px;
+  letter-spacing: -4px;
+}
+
+.feature_p_md {
+  font-size: 40px;
+  font-weight: 600;
+  /* line-height: 2.5cm; */
+  padding-left: 60px;
+  padding-top: 60px;
+  letter-spacing: 0px;
+}
+
+/* .feature_card_lg {
+  font-size: 80px;
+  font-weight: 600;
+  line-height: 2.5cm;
+  padding-left: 40px;
+  padding-top: 40px;
+  letter-spacing: -4px;
+} */
+
 .section_orange {
   background-color: rgb(255, 67, 1);
 }
