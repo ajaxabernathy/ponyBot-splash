@@ -2,8 +2,9 @@
 import { createKey } from 'next/dist/shared/lib/router/router';
 import Link from 'next/link';
 import { useState } from 'react';
-// import { CopyToClipboard } from 'react-copy-to-clipboard';
-import { PiDog } from 'react-icons/Pi';
+import Image from 'next/image';
+import logo from '../public/watchdog-logo-02.png';
+// import { PiDog } from 'react-icons/Pi';
 
 function FeaturesCardOne() {
   const [copy, setCopy] = useState(false);
@@ -23,10 +24,12 @@ function FeaturesCardOne() {
           for developers building containerized applications
         </div>
         <div className='w-1/2 grid place-items-center'>
-          <div className='h-2/3 w-1/2 m-4 p-2 border-2 border-theme-blue rounded'>
+          <div className='h-2/3 w-1/2 m-4 p-2 border-2 shadow-slate-300 shadow-xl border-theme-blue rounded'>
             <div className='flex items-center justify-start'>
-              <PiDog size={100} />
-              <span className='nav_text ml-2'>Get Started</span>
+              {/* <PiDog size={100} /> */}
+              <Image src={logo} width={100} height={100} alt='WatchDog Logo' />
+
+              <span className='nav_text ml-2 '>Get Started</span>
             </div>
             <div className='p-8'>
               <div className='flex items-center justify-between w-full'>

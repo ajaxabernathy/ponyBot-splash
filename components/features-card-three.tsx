@@ -19,7 +19,7 @@ function FeaturesCardThree() {
 
         {/* Right Column */}
         <div
-          className='feature_p overflow-y-auto h-screen'
+          className='feature_p w-1/2 overflow-y-auto h-screen'
           style={{ overflowY: 'scroll' }}
         >
           <h2 className='text-slate-200 mb-2'>Seamless Team Communication</h2>
