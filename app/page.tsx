@@ -1,6 +1,6 @@
 import FeaturesCardOne from '@/components/features-card-one';
 import FeaturesCardTwo from '@/components/features-card-two';
-import Footer from '@/components/footer';
+import FeaturesCardThree from '@/components/features-card-three';
 
 export default function Home() {
   return (
@@ -14,7 +14,7 @@ export default function Home() {
             <div className='head_text animate-text bg-gradient-to-br from-theme-blue via-black to-black bg-clip-text text-transparent'>
               Monitor.
             </div>
-            <div className='head_text animate-text bg-gradient-to-bl from-theme-blue via-black to-theme-blue bg-clip-text text-transparent'>
+            <div className='head_text animate-text py-2 bg-gradient-to-bl from-theme-blue via-black to-theme-blue bg-clip-text text-transparent'>
               Deploy.
             </div>
           </h1>
@@ -36,8 +36,13 @@ export default function Home() {
         </span> */}
       </div>
       <FeaturesCardOne />
+      <div className='w-1/2'>
+        <h1 className='head_text bg-black p-2 text-slate-50 w-screen'>
+          Features
+        </h1>
+      </div>
       {/* <FeaturesCardTwo /> */}
-      <Footer />
+      <FeaturesCardThree />
     </main>
   );
 }
