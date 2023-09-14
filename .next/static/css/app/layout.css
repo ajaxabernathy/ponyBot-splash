@@ -590,6 +590,9 @@ video {
     max-width: 1536px;
   }
 }
+.relative {
+  position: relative;
+}
 .m-4 {
   margin: 1rem;
 }
@@ -623,6 +626,12 @@ video {
 .mt-10 {
   margin-top: 2.5rem;
 }
+.mt-2 {
+  margin-top: 0.5rem;
+}
+.mt-24 {
+  margin-top: 6rem;
+}
 .mt-4 {
   margin-top: 1rem;
 }
@@ -650,6 +659,9 @@ video {
 .h-2\/3 {
   height: 66.666667%;
 }
+.h-36 {
+  height: 9rem;
+}
 .h-8 {
   height: 2rem;
 }
@@ -667,6 +679,9 @@ video {
 }
 .w-1\/2 {
   width: 50%;
+}
+.w-36 {
+  width: 9rem;
 }
 .w-48 {
   width: 12rem;
@@ -704,6 +719,9 @@ video {
 .list-disc {
   list-style-type: disc;
 }
+.grid-cols-1 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
 .flex-row {
   flex-direction: row;
 }
@@ -727,6 +745,14 @@ video {
 }
 .justify-between {
   justify-content: space-between;
+}
+.gap-8 {
+  gap: 2rem;
+}
+.space-y-2 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
 }
 .overflow-y-auto {
   overflow-y: auto;
@@ -769,6 +795,10 @@ video {
 .bg-slate-100 {
   --tw-bg-opacity: 1;
   background-color: rgb(241 245 249 / var(--tw-bg-opacity));
+}
+.bg-slate-50 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(248 250 252 / var(--tw-bg-opacity));
 }
 .bg-theme-blue {
   --tw-bg-opacity: 1;
@@ -876,6 +906,10 @@ video {
   font-size: 1.875rem;
   line-height: 2.25rem;
 }
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
@@ -886,8 +920,22 @@ video {
 .font-bold {
   font-weight: 700;
 }
+.font-semibold {
+  font-weight: 600;
+}
 .leading-normal {
   line-height: 1.5;
+}
+.tracking-tight {
+  letter-spacing: -0.025em;
+}
+.text-black {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+.text-gray-800 {
+  --tw-text-opacity: 1;
+  color: rgb(31 41 55 / var(--tw-text-opacity));
 }
 .text-slate-100 {
   --tw-text-opacity: 1;
@@ -1058,8 +1106,20 @@ body {
     display: block;
   }
 
+  .md\:h-48 {
+    height: 12rem;
+  }
+
+  .md\:w-48 {
+    width: 12rem;
+  }
+
   .md\:w-auto {
     width: auto;
+  }
+
+  .md\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .md\:flex-row {
@@ -1087,6 +1147,13 @@ body {
   .md\:hover\:text-slate-50:hover {
     --tw-text-opacity: 1;
     color: rgb(248 250 252 / var(--tw-text-opacity));
+  }
+}
+
+@media (min-width: 1024px) {
+
+  .lg\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 }
 
