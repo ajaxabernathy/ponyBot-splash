@@ -1,19 +1,26 @@
 import React from 'react';
 import Image from 'next/image';
 
+//interface for each team member
 interface TeamMember {
 	name: string;
 	image: string;
+	role: string;
 }
 
 const teamMembers: TeamMember[] = [
-	{ name: 'Arjun', image: '/arjun.jpg' },
-	{ name: 'Ajax', image: '/ajax.jpg' },
-	{ name: 'Jerry', image: '/jerry.jpg' },
-	{ name: 'Oliver', image: '/oliver.jpg' },
+	{ name: 'Arjun Vikuntam', image: '/arjun.jpg', role: 'Software Engineer' },
+	{ name: 'Ajax Abernathy', image: '/ajax.jpg', role: 'Software Engineer' },
+	{ name: 'Jerry Perez', image: '/jerry.jpg', role: 'Software Engineer' },
+	{
+		name: 'Oliver Wendell-Braly',
+		image: '/oliver.jpg',
+		role: 'Software Engineer',
+	},
 ];
 
-function TeamMemberCard({ name, image }: TeamMember) {
+//team member card component
+function TeamMemberCard({ name, image, role }: TeamMember) {
 	return (
 		<div className='flex flex-col items-center space-y-2'>
 			<div className='relative w-36 h-36 md:w-48 md:h-48'>
@@ -26,6 +33,7 @@ function TeamMemberCard({ name, image }: TeamMember) {
 				/>
 			</div>
 			<h3 className='text-lg font-semibold text-black'>{name}</h3>
+			<p className='text-gray-800'>{role}</p>
 		</div>
 	);
 }
