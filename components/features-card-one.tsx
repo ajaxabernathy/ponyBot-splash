@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { useState } from 'react';
 import Image from 'next/image';
 import logo from '../public/watchdog-logo-02.png';
-// import { PiDog } from 'react-icons/Pi';
+import { BiCopy } from 'react-icons/Bi';
 
 function FeaturesCardOne() {
   const [copy, setCopy] = useState(false);
@@ -26,7 +26,6 @@ function FeaturesCardOne() {
         <div className='w-1/2 grid place-items-center'>
           <div className='h-2/3 w-1/2 m-4 p-2 border-4 shadow-slate-300 shadow-xl border-theme-blue rounded'>
             <div className='flex items-center justify-start'>
-              {/* <PiDog size={100} /> */}
               <Image src={logo} width={100} height={100} alt='WatchDog Logo' />
 
               <span className='nav_text ml-2 '>Get Started</span>
@@ -39,9 +38,10 @@ function FeaturesCardOne() {
                     setCopy(true);
                     handleClick();
                   }}
-                  className='border flex w-64 rounded border-slate-400 hover:bg-green-100'
+                  className='border flex justify-between items-center w-64 rounded border-slate-400 hover:bg-green-100'
                 >
                   <code className='p-2 ml-1'>{' > npm i watchdogcli'}</code>
+                  <BiCopy className='flex items-center p-2' size={30} />
                 </button>
                 {copy ? (
                   <span className='w-8 h-8 flex items-center justify-center rounded-full text-slate-50 bg-green-400'>
@@ -60,7 +60,9 @@ function FeaturesCardOne() {
               <li className='py-4'>
                 Once installed, run{' '}
                 <span className='text-theme-blue decoration-solid underline-offset-1'>
-                  <Link href='/docs'>commands</Link>
+                  <Link href='https://github.com/WatchDogCLI/WatchDog/blob/main/README.md'>
+                    commands
+                  </Link>
                 </span>{' '}
                 to interact with your Kubernetes cluster.
               </li>
