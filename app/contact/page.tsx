@@ -1,43 +1,35 @@
 import React from 'react';
 import Image from 'next/image';
 
-//interface for each team member
 interface TeamMember {
   name: string;
   image: string;
   role: string;
-  qrcode: string;
 }
 
 const teamMembers: TeamMember[] = [
   {
-    name: 'Arjun Vikuntam',
-    image: '/arjun.jpg',
-    role: 'Software Engineer',
-    qrcode: '/jerry-frame.png',
-  },
-  {
     name: 'Ajax Abernathy',
     image: '/ajax.jpg',
     role: 'Software Engineer',
-    qrcode: '/jerry-frame.png',
   },
   {
-    name: 'Oliver Wendell-Braly',
-    image: '/oliver.jpg',
+    name: 'Arjun Vikuntam',
+    image: '/arjun.jpg',
     role: 'Software Engineer',
-    qrcode: '/jerry-frame.png',
   },
   {
     name: 'Jerry Perez',
     image: '/jerry.jpg',
     role: 'Software Engineer',
-    qrcode: '/jerry-frame.png',
+  },
+  {
+    name: 'Oliver Wendell-Braly',
+    image: '/oliver.jpg',
+    role: 'Software Engineer',
   },
 ];
-
-//team member card component
-function TeamMemberCard({ name, image, role, qrcode }: TeamMember) {
+function TeamMemberCard({ name, image, role }: TeamMember) {
   return (
     <div className='flex flex-col items-center space-y-2'>
       <div className='relative w-36 h-36 md:w-48 md:h-48'>
@@ -51,7 +43,6 @@ function TeamMemberCard({ name, image, role, qrcode }: TeamMember) {
       </div>
       <h3 className='text-lg font-semibold text-black'>{name}</h3>
       <p className='text-gray-800'>{role}</p>
-      {qrcode}
     </div>
   );
 }
