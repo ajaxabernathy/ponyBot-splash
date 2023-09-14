@@ -39,7 +39,7 @@ body {
 .head_text {
   font-size: 260px;
   @apply tracking-tighter
-  font-extrabold leading-[1.15];
+  font-extrabold leading-[1.1];
 }
 
 .body_text {

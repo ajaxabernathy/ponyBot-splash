@@ -7,10 +7,10 @@ const Navbar = () => {
     <nav className='bg-theme-blue'>
       <div className='w-full flex items-center justify-between p-4'>
         <div className='flex items-center'>
-          <Image src={logo} width={100} height={100} alt='WatchDog Logo' />
+          <Image src={logo} width={70} height={70} alt='WatchDog Logo' />
           <Link
             href='/'
-            className='nav_text ml-5 flex items-start md:hover:text-slate-50'
+            className='nav_text ml-2 flex items-start md:hover:text-slate-50'
           >
             WatchDog
           </Link>

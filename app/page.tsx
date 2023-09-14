@@ -14,7 +14,7 @@ export default function Home() {
             <div className='head_text animate-text bg-gradient-to-br from-theme-blue via-black to-black bg-clip-text text-transparent'>
               Monitor.
             </div>
-            <div className='head_text animate-text bg-gradient-to-bl from-theme-blue via-black to-theme-blue bg-clip-text text-transparent'>
+            <div className='head_text animate-text py-2 bg-gradient-to-bl from-theme-blue via-black to-theme-blue bg-clip-text text-transparent'>
               Deploy.
             </div>
           </h1>

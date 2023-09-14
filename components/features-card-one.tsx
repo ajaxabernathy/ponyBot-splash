@@ -24,7 +24,7 @@ function FeaturesCardOne() {
           for developers building containerized applications
         </div>
         <div className='w-1/2 grid place-items-center'>
-          <div className='h-2/3 w-1/2 m-4 p-2 border-2 shadow-slate-300 shadow-xl border-theme-blue rounded'>
+          <div className='h-2/3 w-1/2 m-4 p-2 border-4 shadow-slate-300 shadow-xl border-theme-blue rounded'>
             <div className='flex items-center justify-start'>
               {/* <PiDog size={100} /> */}
               <Image src={logo} width={100} height={100} alt='WatchDog Logo' />
@@ -35,13 +35,13 @@ function FeaturesCardOne() {
               <div className='flex items-center justify-between w-full'>
                 <button
                   onClick={() => {
-                    navigator.clipboard.writeText('npm i watchdog');
+                    navigator.clipboard.writeText('npm i watchdogcli');
                     setCopy(true);
                     handleClick();
                   }}
                   className='border flex w-64 rounded border-slate-400 hover:bg-green-100'
                 >
-                  <code className='p-2 ml-1'>{' > npm i watchdog'}</code>
+                  <code className='p-2 ml-1'>{' > npm i watchdogcli'}</code>
                 </button>
                 {copy ? (
                   <span className='w-8 h-8 flex items-center justify-center rounded-full text-slate-50 bg-green-400'>
@@ -52,7 +52,7 @@ function FeaturesCardOne() {
             </div>
             <ul className='p-6 text-slate-600 list-disc text-xl'>
               <li className='py-4'>
-                This is a Node.js module available though the npm registry.
+                This is a Node.js module available through the npm registry.
               </li>
               <li className='py-4'>
                 Installation is done using the above npm install command.
