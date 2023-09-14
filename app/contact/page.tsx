@@ -7,8 +7,8 @@ interface TeamMember {
 }
 
 const teamMembers: TeamMember[] = [
-	{ name: 'Arjun', image: '/jerry1.jpg' },
-	{ name: 'Ajax', image: '/jerry4.jpg' },
+	{ name: 'Arjun', image: '/jerry3.jpg' },
+	{ name: 'Ajax', image: '/ajax.jpg' },
 	{ name: 'Jerry', image: '/jerry2.jpg' },
 	{ name: 'Oliver', image: '/oliver.jpg' },
 ];
@@ -36,7 +36,7 @@ export default function MeetTheTeamPage() {
 			<div className='text-center'>
 				<h1 className='text-3xl font-bold text-gray-800'>Meet the Team</h1>
 				<p className='mt-2 text-lg text-gray-800'>
-					Get to know our talented team members
+					Get to know the watchdogs
 				</p>
 			</div>
 
