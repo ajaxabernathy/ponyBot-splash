@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { useState } from 'react';
 import Image from 'next/image';
 import logo from '../public/watchdog-logo-02.png';
-import { BiCopy } from 'react-icons/Bi';
+import { BiCopy } from 'react-icons/bi';
 
 function FeaturesCardOne() {
   const [copy, setCopy] = useState(false);
