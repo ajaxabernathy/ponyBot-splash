@@ -2,14 +2,14 @@ import React from 'react';
 import Image from 'next/image';
 
 interface TeamMember {
-  name: string;
-  image: string;
+	name: string;
+	image: string;
 }
 
 const teamMembers: TeamMember[] = [
-	{ name: 'Arjun', image: '/jerry3.jpg' },
+	{ name: 'Arjun', image: '/arjun.jpg' },
 	{ name: 'Ajax', image: '/ajax.jpg' },
-	{ name: 'Jerry', image: '/jerry2.jpg' },
+	{ name: 'Jerry', image: '/jerry.jpg' },
 	{ name: 'Oliver', image: '/oliver.jpg' },
 ];
 
@@ -35,9 +35,7 @@ export default function MeetTheTeamPage() {
 		<main className='px-8 py-16 bg-gray-100'>
 			<div className='text-center'>
 				<h1 className='text-3xl font-bold text-gray-800'>Meet the Team</h1>
-				<p className='mt-2 text-lg text-gray-800'>
-					Get to know the watchdogs
-				</p>
+				<p className='mt-2 text-lg text-gray-800'>Get to know the watchdogs</p>
 			</div>
 
 			<div className='grid grid-cols-1 gap-8 mt-12 md:grid-cols-2 lg:grid-cols-4'>
@@ -45,6 +43,6 @@ export default function MeetTheTeamPage() {
 					<TeamMemberCard key={index} {...member} />
 				))}
 			</div>
-		</main >
+		</main>
 	);
 }
