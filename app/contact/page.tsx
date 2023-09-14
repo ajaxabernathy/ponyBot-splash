@@ -10,7 +10,7 @@ interface TeamMember {
 const teamMembers: TeamMember[] = [
   {
     name: 'Ajax Abernathy',
-    image: '/ajax.jpg',
+    image: '/ajax.JPG',
     role: 'Software Engineer',
   },
   {
@@ -25,7 +25,7 @@ const teamMembers: TeamMember[] = [
   },
   {
     name: 'Oliver Wendell-Braly',
-    image: '/oliver.jpg',
+    image: '/oliver.JPG',
     role: 'Software Engineer',
   },
 ];
