@@ -12,6 +12,12 @@
   font-extrabold leading-[1.15];
 }
 
+.menu_text {
+  font-size: 30px;
+  @apply tracking-tighter
+  font-extrabold leading-[1.15];
+}
+
 .head_text {
   font-size: 250px;
   @apply tracking-tighter

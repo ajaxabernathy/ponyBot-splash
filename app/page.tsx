@@ -7,14 +7,14 @@ export default function Home() {
     <main>
       <div className='w-screen landing_body h-screen'>
         <section className=''>
-          <div className='text-left ml-6'>
-            <div className='head_text animate-text bg-gradient-to-r from-black via-black to-theme-blue bg-clip-text text-transparent font-black '>
+          <div className='head_text text-center md:text-left ml-6'>
+            <div className='animate-text bg-gradient-to-r from-black via-black to-theme-blue bg-clip-text text-transparent font-black '>
               Develop.
             </div>
-            <div className='head_text animate-text bg-gradient-to-br from-theme-blue via-black to-black bg-clip-text text-transparent'>
+            <div className='animate-text bg-gradient-to-br from-theme-blue via-black to-black bg-clip-text text-transparent'>
               Monitor.
             </div>
-            <div className='head_text animate-text bg-gradient-to-bl from-theme-blue via-black to-theme-blue bg-clip-text text-transparent'>
+            <div className='animate-text bg-gradient-to-bl from-theme-blue via-black to-theme-blue bg-clip-text text-transparent'>
               Deploy.
             </div>
           </div>
@@ -26,7 +26,7 @@ export default function Home() {
           Features
         </h1>
       </div>
-      <FeaturesCardTwo />
+      {/* <FeaturesCardTwo /> */}
       <FeaturesCardThree />
     </main>
   );

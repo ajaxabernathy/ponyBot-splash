@@ -6,29 +6,47 @@ import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
 import { useState } from 'react';
 
 const Navbar = () => {
-  const [nav, setNav] = useState(false);
+  const [nav, setNav] = useState(true);
 
   const handleNav = () => {
     setNav(!nav);
   };
 
   return (
-    <nav className='bg-theme-blue flex items-center justify-between p-4 max-w-[2480px] mx-auto'>
-      {/* WatchDog logo and home page link */}
-      <div className='flex items-center hidden'>
-        <Image src={logo} width={70} height={70} alt='WatchDog Logo' />
+    <nav className='bg-theme-blue flex items-center justify-between p-4 max-w-[2480px] mx-auto h-28'>
+      {/* Home link and WatchDog logo */}
+      <div className='md:flex items-center'>
         <Link
           href='/'
-          className='nav_text ml-2 flex items-start hover:text-slate-50'
+          className='nav_text ml-2 hidden md:flex md:hover:invert items-center'
         >
+          <Image
+            className='mr-1'
+            src={logo}
+            width={70}
+            height={70}
+            alt='WatchDog Logo'
+          />
           WatchDog
+        </Link>
+        {/* Invisible logo link to homepage that appears after breakpoint */}
+        <Link
+          href='/'
+          className='ml-2 flex md:invisible hover:invert items-left'
+        >
+          <Image
+            className='mr-1'
+            src={logo}
+            width={70}
+            height={70}
+            alt='WatchDog Logo'
+          />
         </Link>
       </div>
 
       {/* Navigation Links */}
       <div>
-        <ul className='nav_text flex hidden'>
-          {/* p-4 md:p-0 mt-4 md:flex-row md:space-x-8 md:mt-0' */}
+        <ul className='nav_text hidden md:flex p-4 mt-4 md:space-x-8 md:mt-0'>
           <li>
             <Link
               href='https://github.com/oslabs-beta/WatchDog/blob/main/README.md'
@@ -48,40 +66,37 @@ const Navbar = () => {
         </ul>
       </div>
 
-      {/* Hamburger menu with mobile break points  */}
-      <div onClick={handleNav}>
+      {/* Navbar with menu at mobile break points  */}
+      <div onClick={handleNav} className=' flex items-center md:hidden'>
         {!nav ? <AiOutlineClose size={20} /> : <AiOutlineMenu size={20} />}
       </div>
       <div
         className={
           !nav
-            ? 'fixed left-0 top-0 w-[60%] h-full border-r border-r-black bg-theme-blue ease-in-out duration-500'
+            ? 'fixed left-0 top-0 w-[40%] h-full border-r border-r-theme-blue bg-black ease-in-out duration-500'
             : 'fixed left-[-100%]'
         }
       >
-        <div className='flex items-center'>
+        <div className='flex invert items-center'>
           <Image src={logo} width={70} height={70} alt='WatchDog Logo' />
-          <Link
-            href='/'
-            className='nav_text ml-2 flex items-start hover:text-slate-50'
-          >
-            WatchDog
-          </Link>
+          <div className='nav_text ml-2 flex items-start'>Woof.</div>
         </div>
-        <ul className='p-4'>
-          <li className='p-4 border-b border-black'>
+        <ul className='menu_text text-slate-50'>
+          <li className='p-4 border-b border-theme-blue'>
+            <Link href='/' className='block py-2 hover:text-theme-blue'>
+              Home
+            </Link>
+          </li>
+          <li className='p-4 border-b border-theme-blue'>
             <Link
               href='https://github.com/oslabs-beta/WatchDog/blob/main/README.md'
-              className='block py-2 hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-slate-50'
+              className='block py-2 hover:text-theme-blue'
             >
               Docs
             </Link>
           </li>
-          <li className='p-4 border-b border-black'>
-            <Link
-              href='/contact'
-              className='block py-2 hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-slate-50'
-            >
+          <li className='p-4 border-b border-theme-blue'>
+            <Link href='/contact' className='block py-2 hover:text-theme-blue'>
               Contact
             </Link>
           </li>
