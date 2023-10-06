@@ -2,30 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-} */
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
-
 .landing_body {
   background-color: #0047ff;
 }
@@ -36,8 +12,26 @@ body {
   font-extrabold leading-[1.15];
 }
 
+.nav_text_light {
+  font-size: 40px;
+  @apply tracking-tighter
+  font-semibold leading-[1.15];
+}
+
+.menu_text {
+  font-size: 30px;
+  @apply tracking-tighter
+  font-extrabold leading-[1.15];
+}
+
 .head_text {
-  font-size: 260px;
+  font-size: 250px;
+  @apply tracking-tighter
+  font-extrabold leading-[1.1];
+}
+
+.mobile_head_text {
+  font-size: 50px;
   @apply tracking-tighter
   font-extrabold leading-[1.1];
 }
@@ -77,15 +71,9 @@ body {
   background-color: #0047ff;
   overflow-y: scroll;
 }
-/* .feature_card_lg {
-  font-size: 80px;
-  font-weight: 600;
-  line-height: 2.5cm;
-  padding-left: 40px;
-  padding-top: 40px;
-  letter-spacing: -4px;
-} */
 
-.section_orange {
-  background-color: rgb(255, 67, 1);
+@media only screen and (max-width: 320px) {
+  .head_text {
+    font-size: 2em;
+  }
 }
