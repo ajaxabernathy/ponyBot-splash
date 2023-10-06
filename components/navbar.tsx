@@ -71,12 +71,16 @@ const Navbar = () => {
         onClick={handleNav}
         className='flex hover:invert items-center md:hidden'
       >
-        {!nav ? <AiOutlineClose size={25} /> : <AiOutlineMenu size={25} />}
+        {!nav ? (
+          <AiOutlineClose size={25} />
+        ) : (
+          <AiOutlineMenu onClick={handleNav} size={25} />
+        )}
       </div>
       <div
         className={
           !nav
-            ? 'fixed left-0 top-0 w-[60%] h-full border-r border-r-theme-blue bg-black ease-in-out duration-500'
+            ? 'fixed left-0 top-0 w-[60%] h-full border-r border-r-theme-blue bg-black ease-in-out duration-700'
             : 'fixed left-[-100%]'
         }
       >
@@ -86,20 +90,29 @@ const Navbar = () => {
         </div>
         <ul className='menu_text text-slate-50'>
           <li className='p-4 border-b border-theme-blue'>
-            <Link href='/' className='block py-2 hover:text-theme-blue'>
+            <Link
+              href='/'
+              onClick={handleNav}
+              className='block py-2 hover:text-theme-blue'
+            >
               Home
             </Link>
           </li>
           <li className='p-4 border-b border-theme-blue'>
             <Link
               href='https://github.com/oslabs-beta/WatchDog/blob/main/README.md'
+              onClick={handleNav}
               className='block py-2 hover:text-theme-blue'
             >
               Docs
             </Link>
           </li>
           <li className='p-4 border-b border-theme-blue'>
-            <Link href='/contact' className='block py-2 hover:text-theme-blue'>
+            <Link
+              href='/contact'
+              onClick={handleNav}
+              className='block py-2 hover:text-theme-blue'
+            >
               Contact
             </Link>
           </li>
