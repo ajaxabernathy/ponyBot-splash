@@ -16,7 +16,7 @@ function FeaturesCardOne() {
   return (
     <main>
       <section className='w-full flex flex-row min-h-screen min-w-screen justify-between bg-slate-100'>
-        <div className='feature_p_lg  w-1/2'>
+        <div className='font-[600] leading-none tracking-tighter pl-[10px] pt-[10px] md:pt-[60px] md:pl-[60px] text-[40px] md:text-[80px] w-1/2'>
           WatchDog is a{' '}
           <span className='text-theme-blue'>
             customizable Kubernetes monitoring solution
