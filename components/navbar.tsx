@@ -13,7 +13,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className='bg-theme-blue flex items-center justify-between p-4 max-w-[2480px] mx-auto h-28'>
+    <nav className='bg-theme-blue w-full flex items-center justify-between p-4 max-w-[2480px] mx-auto h-28'>
       {/* Home link and WatchDog logo */}
       <div className='md:flex items-center'>
         <Link
@@ -67,8 +67,11 @@ const Navbar = () => {
       </div>
 
       {/* Navbar with menu at mobile break points  */}
-      <div onClick={handleNav} className=' flex items-center md:hidden'>
-        {!nav ? <AiOutlineClose size={20} /> : <AiOutlineMenu size={20} />}
+      <div
+        onClick={handleNav}
+        className='flex hover:invert items-center md:hidden'
+      >
+        {!nav ? <AiOutlineClose size={25} /> : <AiOutlineMenu size={25} />}
       </div>
       <div
         className={

@@ -12,6 +12,12 @@
   font-extrabold leading-[1.15];
 }
 
+.nav_text_light {
+  font-size: 40px;
+  @apply tracking-tighter
+  font-semibold leading-[1.15];
+}
+
 .menu_text {
   font-size: 30px;
   @apply tracking-tighter
@@ -20,6 +26,12 @@
 
 .head_text {
   font-size: 250px;
+  @apply tracking-tighter
+  font-extrabold leading-[1.1];
+}
+
+.mobile_head_text {
+  font-size: 50px;
   @apply tracking-tighter
   font-extrabold leading-[1.1];
 }

@@ -49,7 +49,7 @@ function TeamMemberCard({ name, image, role }: TeamMember) {
 
 export default function MeetTheTeamPage() {
   return (
-    <main className='h-screen px-8 py-16 bg-slate-50'>
+    <main className='px-8 py-16 bg-slate-50'>
       <div className='text-center'>
         <h1 className='nav_text'>Meet the Team</h1>
         <p className='mt-2 tracking-tight text-lg text-gray-800'>
