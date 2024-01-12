@@ -14,8 +14,8 @@ function FeaturesCardThree() {
 
         {/* Right Column */}
         <div
-          className='md:text-[40px] font-[600] leading-snug w-1/2 overflow-y-auto h-screen'
-          style={{ overflowY: 'scroll' }}
+          className='md:text-[40px] font-[600] leading-snug w-1/2 overflow-y-auto h-screen scrollbar-hide'
+          // style={{ overflowY: 'scroll' }}
         >
           line-height: 2.5cm; */ letter-spacing: 0px;
           <h2 className='text-theme-blue'>Custom Alerts</h2>
