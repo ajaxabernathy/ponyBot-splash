@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { useState } from 'react';
 import Image from 'next/image';
 import logo from '../public/watchdog-logo-02.png';
-import { BiCopy } from 'react-icons/Bi';
+import { BiCopy } from 'react-icons/bi';
 
 function FeaturesCardOne() {
   const [copy, setCopy] = useState(false);
@@ -15,15 +15,15 @@ function FeaturesCardOne() {
 
   return (
     <main>
-      <section className='w-full flex flex-row h-screen justify-between bg-slate-100'>
-        <div className='feature_p_lg  w-1/2'>
+      <section className='w-full flex flex-row min-h-screen min-w-screen justify-between bg-slate-100'>
+        <div className='font-[600] leading-none tracking-tighter pl-[10px] pt-[10px] md:pt-[60px] md:pl-[60px] text-[40px] md:text-[80px] w-1/2'>
           WatchDog is a{' '}
           <span className='text-theme-blue'>
             customizable Kubernetes monitoring solution
           </span>{' '}
           for developers building containerized applications
         </div>
-        <div className='w-1/2 grid place-items-center'>
+        <div className='w-1/2 hidden md:grid place-items-center'>
           <div className='h-2/3 w-1/2 m-4 p-2 border-4 shadow-slate-300 shadow-xl border-theme-blue rounded'>
             <div className='flex items-center justify-start'>
               <Image src={logo} width={100} height={100} alt='WatchDog Logo' />

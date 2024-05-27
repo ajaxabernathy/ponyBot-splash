@@ -1,4 +1,4 @@
-import { HiCursorClick } from 'react-icons/Hi';
+import { HiCursorClick } from 'react-icons/hi';
 
 function FeaturesCardTwo() {
   return (
