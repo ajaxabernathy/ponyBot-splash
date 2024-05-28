@@ -24,7 +24,7 @@ function FeaturesCardOne() {
           for developers building containerized applications
         </div>
         <div className='w-1/2 hidden md:grid place-items-center'>
-          <div className='h-2/3 w-1/2 m-4 p-2 border-4 shadow-slate-300 shadow-xl border-theme-blue rounded'>
+          <div className='h-auto w-1/2 m-4 p-2 border-4 shadow-slate-300 shadow-xl border-theme-blue rounded'>
             <div className='flex items-center justify-start'>
               <Image src={logo} width={100} height={100} alt='WatchDog Logo' />
 
@@ -50,14 +50,14 @@ function FeaturesCardOne() {
                 ) : null}
               </div>
             </div>
-            <ul className='p-6 text-slate-600 list-disc text-xl'>
-              <li className='py-4'>
+            <ul className='pl-6 text-slate-600 list-disc text-xl'>
+              <li className='py-1'>
                 This is a Node.js module available through the npm registry.
               </li>
-              <li className='py-4'>
+              <li className='pb-1'>
                 Installation is done using the above npm install command.
               </li>
-              <li className='py-4'>
+              <li className='pb-1'>
                 Once installed, run{' '}
                 <span className='text-theme-blue decoration-solid underline-offset-1'>
                   <Link href='https://github.com/WatchDogCLI/WatchDog/blob/main/README.md'>
